@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,600&display=swap');
+
+$main-color : #2b3454;
+$second-color : #6896e9;
+$text-grey  : #8390A2;
+$color-dark: #1D2231;
+
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+*::selection{
+  background-color: #232c2b;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+h1.section-title {
+  width: fit-content;
+  margin: 0 auto 51px;
+  position: relative;
+  color: #0e233e;
+  font-family: emoji;
+
+  &:after {
+    content: '';
+    position: absolute;
+    border: 2px solid #6d7789;
+    width: 70%;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+  }
+}
+
+.swal2-title {
+  font-size: 2rem;
+}
+
+.swal2-popup {
+  font-size: 1.5rem;
+}
+
+.swal2-styled.swal2-confirm {
+  padding: .8rem 2rem;
+  font-size: 2rem;
+}
+
+label.UploadLabel {
+  padding: 6px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  display: table-cell;
+  cursor: pointer;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.card {
+  flex-direction: inherit;
+}
+
+.main-background {
+  background-color: $main-color !important;
+  color: #fff !important;
+}
+
+.color-main {
+  color: $main-color !important;
+}
+
+.main-gradient-background {
+  color: #fff;
+  background: $main-color !important;
+  background: -moz-linear-gradient(-45deg, $main-color 0%, $second-color 100%) !important;
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, $main-color), color-stop(100%, $second-color)) !important;
+  background: -webkit-linear-gradient(
+                  -45deg
+          , $main-color 0%, $second-color 100%) !important;
+  background: -o-linear-gradient(-45deg, $main-color 0%, $second-color 100%) !important;
+  background: -ms-linear-gradient(-45deg, $main-color 0%, $second-color 100%) !important;
+  background: -webkit-linear-gradient(
+                  315deg
+          , $main-color 0%, $second-color 100%) !important;
+  background: -o-linear-gradient(315deg, $main-color 0%, $second-color 100%) !important;
+  background: linear-gradient(
+                  135deg
+          , $main-color 0%, $second-color 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= $main-color , endColorstr= $second-color, GradientType=1 ) !important;
+}
+
+
+footer {
+  background: #243141;
+  color: #fff;
+  padding-top: 30px;
+
+  .principal-footer {
+    display: flex;
+    justify-content: space-around;
+
+    .infos {
+      div {
+        span {
+          display: block;
+          padding: 6px 28px;
+
+          &.R-S {
+            a {
+              font-size: 45px;
+              margin-right: 17px;
+            }
+          }
+        }
+      }
+    }
+
+    .links {
+      h1 {
+        font-size: 1.9em;
+        text-align: center;
+      }
+
+      ul {
+        list-style: none;
+        margin-top: 20px;
+        display: block;
+        font-size: .9em;
+        margin-bottom: 23px;
+
+        li {
+          width: 100%;
+          text-align: center;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .developer {
+      display: flex;
+      align-items: center;
+
+      div > span {
+        display: block;
+        /* width: 100%; */
+
+        span {
+          color: #c3deff;
+          font-weight: 700;
+          font-size: .9em;
+        }
+      }
+    }
+  }
+
+  .footer-foot {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: #18202b;
+
+    p {
+      font-size: .8em;
+      letter-spacing: 1.5px;
+    }
+  }
+
+
+  @media only screen and (max-width: 880px) {
+
+    .infos img {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 620px) {
+    .principal-footer {
+      display: block;
+
+      .infos {
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid #b1b1b1;
+        margin: 0 5px 20px;
+
+        span.R-S {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .links {
+        border-bottom: 2px solid #b1b1b1;
+        margin: 0 5px 20px;
+        padding-bottom: 13px;
+      }
+
+      .developer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 12px;
+      }
+
+
+    }
+
+    .footer-foot {
+      font-size: 12px;
+    }
+  }
+}

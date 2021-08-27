@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background-color: #232c2b;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1.section-title {
+  width: fit-content;
+  margin: 0 auto 51px;
+  position: relative;
+  color: #0e233e;
+  font-family: emoji;
+}
+h1.section-title:after {
+  content: "";
+  position: absolute;
+  border: 2px solid #6d7789;
+  width: 70%;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.swal2-title {
+  font-size: 2rem;
+}
+
+.swal2-popup {
+  font-size: 1.5rem;
+}
+
+.swal2-styled.swal2-confirm {
+  padding: 0.8rem 2rem;
+  font-size: 2rem;
+}
+
+label.UploadLabel {
+  padding: 6px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  display: table-cell;
+  cursor: pointer;
+}
+
+input[type=file] {
+  display: none;
+}
+
+.card {
+  flex-direction: inherit;
+}
+
+.main-background {
+  background-color: #2b3454 !important;
+  color: #fff !important;
+}
+
+.color-main {
+  color: #2b3454 !important;
+}
+
+.main-gradient-background {
+  color: #fff;
+  background: #2b3454 !important;
+  background: -moz-linear-gradient(-45deg, #2b3454 0%, #6896e9 100%) !important;
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #2b3454), color-stop(100%, #6896e9)) !important;
+  background: -webkit-linear-gradient(-45deg, #2b3454 0%, #6896e9 100%) !important;
+  background: -o-linear-gradient(-45deg, #2b3454 0%, #6896e9 100%) !important;
+  background: -ms-linear-gradient(-45deg, #2b3454 0%, #6896e9 100%) !important;
+  background: -webkit-linear-gradient(315deg, #2b3454 0%, #6896e9 100%) !important;
+  background: -o-linear-gradient(315deg, #2b3454 0%, #6896e9 100%) !important;
+  background: linear-gradient(135deg, #2b3454 0%, #6896e9 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= $main-color , endColorstr= $second-color, GradientType=1 ) !important;
+}
+
+footer {
+  background: #243141;
+  color: #fff;
+  padding-top: 30px;
+}
+footer .principal-footer {
+  display: flex;
+  justify-content: space-around;
+}
+footer .principal-footer .infos div span {
+  display: block;
+  padding: 6px 28px;
+}
+footer .principal-footer .infos div span.R-S a {
+  font-size: 45px;
+  margin-right: 17px;
+}
+footer .principal-footer .links h1 {
+  font-size: 1.9em;
+  text-align: center;
+}
+footer .principal-footer .links ul {
+  list-style: none;
+  margin-top: 20px;
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 23px;
+}
+footer .principal-footer .links ul li {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+footer .principal-footer .developer {
+  display: flex;
+  align-items: center;
+}
+footer .principal-footer .developer div > span {
+  display: block;
+  /* width: 100%; */
+}
+footer .principal-footer .developer div > span span {
+  color: #c3deff;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+footer .footer-foot {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background: #18202b;
+}
+footer .footer-foot p {
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+}
+@media only screen and (max-width: 880px) {
+  footer .infos img {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  footer .principal-footer {
+    display: block;
+  }
+  footer .principal-footer .infos {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #b1b1b1;
+    margin: 0 5px 20px;
+  }
+  footer .principal-footer .infos span.R-S {
+    display: flex;
+    justify-content: center;
+  }
+  footer .principal-footer .links {
+    border-bottom: 2px solid #b1b1b1;
+    margin: 0 5px 20px;
+    padding-bottom: 13px;
+  }
+  footer .principal-footer .developer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 12px;
+  }
+  footer .footer-foot {
+    font-size: 12px;
+  }
+}
+
+body {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: normal;
+  background: #f8f9fd;
+  color: gray;
+}
+body .ftco-section {
+  padding: 7em 0;
+}
+body label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+body .btn {
+  cursor: pointer;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+body p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+body .wrap {
+  width: 100%;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 34px -15px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 10px 34px -15px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 10px 34px -15px rgba(0, 0, 0, 0.24);
+}
+body .wrap .text-wrap, body .wrap .login-wrap {
+  width: 50%;
+}
+body .wrap .login-wrap {
+  position: relative;
+  background: #fff;
+}
+body .wrap .login-wrap .form-group {
+  position: relative;
+}
+body .wrap .login-wrap .form-group a {
+  color: #7d7b7b;
+}
+body .wrap .login-wrap .form-group .label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  font-weight: 700;
+}
+body .wrap .login-wrap .form-group .form-control {
+  height: 48px;
+  background: rgba(0, 0, 0, 0.05);
+  color: #000;
+  font-size: 16px;
+  border-radius: 50px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+body .wrap .login-wrap .form-group .checkbox-wrap {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body .wrap .login-wrap .form-group .checkbox-wrap input {
+  position: absolute;
+  cursor: pointer;
+  height: 26px;
+  top: 0;
+  left: 10px;
+}
+body .wrap .login-wrap .form-group .checkbox-primary {
+  color: #6896e9;
+}
+body .wrap .login-wrap .form-group .submit {
+  border: 1px solid #6896e9;
+}
+body .wrap .transform {
+  transform: translateX(-100%);
+}
+body .wrap .text-wrap {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.8s ease;
+}
+body .wrap .text-wrap .w-100 {
+  width: 100% !important;
+}
+body .wrap .text-wrap .text h2 {
+  font-weight: 700;
+  color: #fff;
+}
+body .wrap .text-wrap .text p {
+  color: #fff;
+}
+body .wrap .text-wrap .text .btn.btn-white.btn-outline-white {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+input {
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid #fe7f7f;
+  background-color: #fe7f7f;
+  box-shadow: 0px 0px 10px #fd7d7d;
+}
+
+/*# sourceMappingURL=login_style.css.map */

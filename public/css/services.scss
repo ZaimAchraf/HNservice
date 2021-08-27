@@ -1,0 +1,213 @@
+@import 'General_style';
+@import 'front_general';
+
+
+body {
+  @import 'navbar';
+
+  .content {
+    margin-top: 66px;
+
+    .absolute-container {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: #0e1119eb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+      display: none;
+
+      form.command-form {
+        background: #fff;
+        padding: 30px;
+        width: 50vw;
+
+        button.btn.btn-primary {
+          display: block;
+          margin: auto;
+          width: 135px;
+        }
+      }
+
+      > div {
+        position: relative;
+        background-color: #fff;
+
+        span.close-btn {
+          font-size: 48px;
+          position: absolute;
+          right: 18px;
+          color: #999;
+          cursor: pointer;
+        }
+
+        h1 {
+          color: #43607d;
+          text-align: center;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  main {
+    section.services {
+
+      .service {
+        display: flex;
+        cursor: pointer;
+        border: 1px solid #ddd;
+        margin-bottom: 40px;
+
+        .left {
+          padding: 48px;
+          width: 170px;
+          background: #243141;
+
+          img {
+            width: 276px;
+            height: 252px;
+            position: relative;
+            z-index: 2;
+            box-shadow: 2px 2px 10px #455d7c;
+          }
+        }
+
+        .right {
+          position: relative;
+          padding: 47px 40px 40px 196px;
+          width: 100%;
+
+          .animation {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 0;
+            /* width: 100%; */
+            background: #243141;
+            transition: .4s ease;
+          }
+
+          .infos {
+            position: relative;
+            z-index: 2;
+            /* color: #fff; */
+
+            h1 {
+              font-size: 35px;
+              font-weight: 700;
+              margin-bottom: 18px;
+            }
+
+            p {
+              line-height: 29px;
+              text-align: justify;
+            }
+
+            span.price-cont {
+              margin-top: 20px;
+              display: inline-block;
+              font-weight: 700;
+
+              .price {
+                color: #888;
+                font-weight: 300;
+              }
+            }
+          }
+
+          span.btn.command-btn {
+            position: absolute;
+            bottom: 15px;
+            right: 84px;
+            background: #243141;
+            color: #fff;
+            transition: .3s ease;
+          }
+
+        }
+
+        &:hover {
+          .right {
+            .animation {
+              width: 100%;
+            }
+
+            .infos {
+              color: #fff;
+
+            }
+
+            span.btn.command-btn {
+              background:#79a0d0;
+
+              &:hover {
+                background-color: #0b3e7e;
+              }
+            }
+          }
+        }
+      }
+
+      @media only screen and (max-width: 1200px) {
+        width: 90vw;
+      }
+
+      @media only screen and (max-width: 768px) {
+        width: 90vw;
+
+        .service {
+          flex-flow: wrap;
+
+          .left {
+            width: 50%;
+
+            img {
+              width: calc(200% + 96px);
+            }
+          }
+
+          .right {
+            padding-left: 20px;
+
+            .animation {
+              display: none;
+            }
+          }
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        width: 99vw;
+        padding: 40px 5px ;
+
+        .service {
+          flex-flow: wrap;
+
+          .right {
+            padding-left: 20px;
+            padding-bottom: 70px;
+
+            .infos {
+
+              h1 {
+                font-size: 30px;
+              }
+            }
+
+            .command-btn {
+              right: 40px !important;
+              left: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

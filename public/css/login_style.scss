@@ -1,0 +1,157 @@
+@import "_General_style";
+
+body {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: normal;
+  background: #f8f9fd;
+  color: gray;
+
+  .ftco-section {
+    padding: 7em 0;
+  }
+
+  label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+  .btn {
+    cursor: pointer;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 50px;
+  }
+
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .wrap {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 10px 34px -15px rgb(0 0 0 / 24%);
+    -moz-box-shadow: 0 10px 34px -15px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 10px 34px -15px rgb(0 0 0 / 24%);
+
+    .text-wrap, .login-wrap {
+      width: 50%;
+    }
+
+    .login-wrap {
+      position: relative;
+      background: #fff;
+
+      .form-group {
+        position: relative;
+
+        a{
+          color: #7d7b7b;
+        }
+
+        .label {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: #000;
+          font-weight: 700;
+        }
+
+        .form-control {
+          height: 48px;
+          background: rgba(0, 0, 0, 0.05);
+          color: #000;
+          font-size: 16px;
+          border-radius: 50px;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          border: 1px solid transparent;
+          padding-left: 20px;
+          padding-right: 20px;
+          -webkit-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+        }
+
+        .checkbox-wrap {
+          display: block;
+          position: relative;
+          padding-left: 30px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 500;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+
+          input {
+            position: absolute;
+            cursor: pointer;
+            height: 26px;
+            top: 0;
+            left: 10px;
+          }
+        }
+
+        .checkbox-primary {
+          color: $second-color;
+        }
+
+        .submit{
+          border: 1px solid $second-color;
+        }
+
+      }
+    }
+    .transform{
+      transform: translateX(-100%);
+    }
+
+    .text-wrap {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      transition: all 0.8s ease;
+
+      .w-100 {
+        width: 100% !important;
+      }
+
+      .text {
+        h2 {
+          font-weight: 700;
+          color: #fff;
+        }
+
+        p {
+          color: #fff;
+        }
+
+        .btn.btn-white.btn-outline-white {
+          border: 1px solid #fff;
+          background: transparent;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+input {
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid #fe7f7f;
+  background-color: #fe7f7f;
+  box-shadow: 0px 0px 10px #fd7d7d;
+}

@@ -1,0 +1,31 @@
+@import "_General_style";
+@import "admin_layout";
+
+button.tabledit-edit-button.btn.btn-sm.btn-default {
+  background: #a9e852;
+  color: #fff;
+}
+
+button.tabledit-delete-button.btn.btn-sm.btn-default {
+  background: #ff8e8e;
+  color: #fff;
+}
+
+.table-container {
+  background: #fff;
+  padding: 20px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button.tabledit-edit-button.btn.btn-sm.btn-default {
+  margin-right: 5px;
+}
+
+th {
+  span {
+    color: #9a9a9a;
+    font-weight: 500;
+    margin-left: 7px;
+  }
+}

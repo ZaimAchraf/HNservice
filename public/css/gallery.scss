@@ -1,0 +1,41 @@
+@import "General_style";
+@import "front_general";
+
+body {
+  @import "navbar";
+
+  .content {
+    margin-top: 66px;
+
+    main {
+
+      section.gallery {
+        width: 90vw !important;
+
+        @media only screen and (max-width: 1200px) {
+          width: 90vw;
+        }
+
+        @media only screen and (max-width: 424px) {
+          h1.section-title {
+            font-size: 29px;
+          }
+        }
+      }
+
+      .item {
+        transition: .3s ease-out;
+        overflow: hidden;
+      }
+
+      .item img {
+        transition: .3s ease-out;
+      }
+
+      .item:hover img {
+        filter: brightness(80%);
+        transform: scale(1.1);
+      }
+    }
+  }
+}

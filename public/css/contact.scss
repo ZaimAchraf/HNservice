@@ -1,0 +1,215 @@
+@import "General_style";
+@import "navbar";
+.contact{
+  background-color: #ddd;
+  z-index: 10;
+  display: flex;
+  overflow: hidden;
+  transition: height .3s ease;
+}
+
+.contact .moitie{
+  height: 100vh;
+  width: 50%;
+  position: relative;
+}
+
+.contact .moitie:first-of-type{
+  background-color: #6bacb5;
+}
+
+.contact .moitie:nth-child(2){
+  background-image: url('/Storage/Statics/images/intro.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+.contact .moitie .darker{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #153642c7;
+}
+
+.contact .contact_form{
+  position: absolute;
+  top: 13vh;
+  bottom: 13vh;
+  right: 10vw;
+  left: 21.5vw;
+  z-index: 20;
+  background-color: #fff;
+  box-shadow: 10px 10px 10px #2b3f5087;
+  display: flex;
+  align-items: center;
+}
+
+.contact .contact_form form{
+  width: 48vw;
+  margin-left: 20.5vw;
+  padding-top: 40px;
+}
+
+.contact .contact_form form table, .contact .contact_form form h1{
+  width: 80%;
+  margin: auto;
+}
+
+.contact .contact_form form h1{
+  margin: -20px auto 20px;
+}
+
+.contact .contact_form form table tr td label{
+  color: #de4141;
+  font-size: .8em;
+}
+
+.contact .contact_form form table tr td input{
+  display: block;
+  margin-bottom: 13px;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding: 0 10px;
+  color: #6f6d6d;
+}
+
+.contact .contact_form form table tr td textarea{
+  display: block;
+  margin-top: 13px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  border-left: 2px solid #dddddd38;
+  width: 100%;
+  height: 100px;
+  padding: 5px 10px;
+  color: #6f6d6d;
+}
+
+.contact .contact_form form table tr:last-of-type td input{
+  width: 150px;
+  margin: 20px auto;
+  cursor: pointer;
+  background-color: #2d4853;
+  color: #fff;
+  font-weight: 500;
+  font-size: 19px;
+  border-radius: 4px;
+}
+
+.contact .contact_form form table tr:last-of-type td input:hover{
+  transform: scale3d(1.1,1.1,1.1);
+}
+
+.contact .personnal_info{
+  position: absolute;
+  top: 20vh;
+  bottom: 20vh;
+  left: 7vw;
+  width: 35vw;
+  z-index: 21;
+  background-color: #214352;
+  box-shadow: 1px 10px 10px #2143525e;
+  color:#fff;
+  padding: 35px 45px 0 30px;
+}
+
+.personnal_info > div {
+  position: relative;
+  height: 100%;
+}
+
+.contact .personnal_info h1{
+  margin-bottom: 20px;
+  font-family: 'Italianno';
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.contact .personnal_info p{
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.contact .personnal_info span{
+  margin-right: 20px;
+  color: #ddd;
+}
+
+.contact .personnal_info .RS{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact .personnal_info .RS a{
+  font-size: 2rem;
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .contact >div:not(.moitie) {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 100px;
+    flex-flow: wrap;
+
+    .contact_form {
+      display: flex;
+      justify-content: center;
+      width: 80vw;
+      background: none;
+      position: static;
+      box-shadow: none;
+
+      form {
+        margin: 0;
+        /* width: 80vw; */
+        background: #fff;
+        min-width: 540px;
+        box-shadow: 10px 10px 10px #2b3f5087;
+      }
+    }
+    .personnal_info {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact >div:not(.moitie) {
+
+    h1 {
+      font-size: 29px;
+    }
+
+    .contact_form {
+
+      form {
+        min-width: 95vw;
+      }
+      td {
+        display: block;
+        label {
+          display: none;
+        }
+
+        input {
+          width: 100%;
+        }
+      }
+    }
+    .personnal_info {
+      display: none;
+    }
+  }
+}
