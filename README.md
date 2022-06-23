@@ -10,4 +10,11 @@
 ![image](https://user-images.githubusercontent.com/81382309/175303707-4bf3b72b-e1af-49b8-a77a-17e2bdbd9e7b.png)
 ![image](https://user-images.githubusercontent.com/81382309/175303770-42a4fb8b-7f11-4c83-a6a3-c77d482d4dad.png)
 
+## Admin Pannel
+
+![image](https://user-images.githubusercontent.com/81382309/175364183-f3624867-e807-48f6-baeb-cf5958a72b12.png)
+![image](https://user-images.githubusercontent.com/81382309/175364216-32fb241f-74b3-4924-ae0d-93c73763690b.png)
+![image](https://user-images.githubusercontent.com/81382309/175364632-dc3b3a2b-f1c1-47b0-bfc4-34c05389bb44.png)
+
+
 
