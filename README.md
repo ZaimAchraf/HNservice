@@ -1,6 +1,6 @@
 # HNservice
 ## The Source Code is Available in the Master branch
-## There is some screens of the application :
+## here is some screens of the application :
 ![image](https://user-images.githubusercontent.com/81382309/175302091-4ead7613-483e-4764-afff-e582715df8f0.png)
 ![image](https://user-images.githubusercontent.com/81382309/175302972-4e595a2d-b14b-42eb-89b6-0956b41fd3b9.png)
 ![image](https://user-images.githubusercontent.com/81382309/175303037-9148e517-7bd2-434a-959c-898210902c54.png)
