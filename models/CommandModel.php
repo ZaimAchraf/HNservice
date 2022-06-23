@@ -16,7 +16,7 @@ class CommandModel extends AbstractModel
     protected $service;
 
 
-    public static $tableName    = 'comands';
+    public static $tableName    = 'orders';
     public static $pk           = 'id';
     public static $tableSchema  = array(
 

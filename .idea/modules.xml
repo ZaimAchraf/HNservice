@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PFE-KHAOULANI.iml" filepath="$PROJECT_DIR$/.idea/PFE-KHAOULANI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/HNServices.iml" filepath="$PROJECT_DIR$/.idea/HNServices.iml" />
     </modules>
   </component>
 </project>

@@ -21,6 +21,7 @@ class ContactModel extends AbstractModel
         'email'         => \PDO::PARAM_STR,
         'subject'       => \PDO::PARAM_STR,
         'message'       => \PDO::PARAM_STR,
+        'readable'       => \PDO::PARAM_STR,
     );
 
     public static function setRead($id) {

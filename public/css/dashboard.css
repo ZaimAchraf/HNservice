@@ -258,7 +258,7 @@ main {
   padding-left: 1rem;
   color: #fff;
   display: flex;
-  justify-content: end;
+  justify-content: start;
   align-items: center;
   position: relative;
 }
@@ -419,7 +419,7 @@ span.show-absolute {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #333333c7;
+  background: rgba(51, 51, 51, 0.7803921569);
   z-index: 3000;
   display: none;
   justify-content: center;
@@ -611,47 +611,38 @@ main .recent-grid .card .card-body .customer .contact span {
   .sidebar {
     width: 70px;
   }
-
   .sidebar .sidebar-brand,
 .sidebar li {
     padding-left: 1rem;
     text-align: center;
   }
-
   .sidebar li a {
     padding-left: 0;
   }
-
   .sidebar .sidebar-brand h2 span:last-child,
 .sidebar li a span:last-child {
     display: none;
   }
-
   .main-content {
     margin-left: 70px;
   }
-
   .main-content header {
     width: calc(100% - 75px);
     left: 75px;
   }
-
   .sidebar:hover {
     width: 305px;
     z-index: 200;
   }
-
   .sidebar:hover .sidebar-brand,
 .sidebar:hover li {
     padding-left: 2rem;
     text-align: left;
   }
-
   .sidebar:hover li a {
     padding-left: 1rem;
     text-decoration: none;
   }
-
   .sidebar:hover .sidebar-brand h2 span:last-child,
 .sidebar:hover li a span:last-child {
     display: inline;
@@ -661,7 +652,6 @@ main .recent-grid .card .card-body .customer .contact span {
   main .cards {
     grid-template-columns: repeat(3, 1fr);
   }
-
   main .recent-grid {
     grid-template-columns: 60% 40%;
   }
@@ -670,24 +660,19 @@ main .recent-grid .card .card-body .customer .contact span {
   main .cards {
     grid-template-columns: repeat(2, 1fr);
   }
-
   main .recent-grid {
     grid-template-columns: 100%;
   }
-
   .main-content header .search-wrapper {
     display: none;
   }
-
   .sidebar {
     left: -100% !important;
   }
-
   header h2 {
     display: flex;
     align-items: center;
   }
-
   header h2 label {
     background: #2b3454;
     display: flex;
@@ -704,43 +689,35 @@ main .recent-grid .card .card-body .customer .contact span {
     text-align: center;
     color: #fff;
   }
-
   header h2 {
     font-size: 1.1rem;
   }
-
   .main-content {
     width: 100%;
     margin-left: 0;
   }
-
   header {
     width: 100% !important;
     left: 0 !important;
   }
-
   #nav-toggle:checked + .sidebar {
     left: 0 !important;
     width: 305px;
     z-index: 200;
   }
-
   #nav-toggle:checked ~ .main-content header h2 label {
     position: relative;
     left: 293px;
     top: -23px;
   }
-
   #nav-toggle:checked + .sidebar .sidebar-brand,
 #nav-toggle:checked + .sidebar li {
     padding-left: 2rem;
     text-align: left;
   }
-
   #nav-toggle:checked + .sidebar li a {
     padding-left: 1rem;
   }
-
   #nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
 #nav-toggle:checked + .sidebar li a span:last-child {
     display: inline;

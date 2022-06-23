@@ -50,6 +50,8 @@ class UserController extends Controller
 
         if($this->require($data) == "success")
         {
+//            echo $this->hash_undecrypted_data("AYAmayssa");
+//            exit();
             $arr = array(
                 'email' => $data['email']
             );
